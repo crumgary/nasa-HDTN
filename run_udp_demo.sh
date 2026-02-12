@@ -22,7 +22,7 @@ trap cleanup SIGINT SIGTERM
 
 # 1. Start Python UDP Receiver (Sink)
 echo "[1/5] Starting Python UDP Receiver on port 8554..."
-python3 -u recv_udp.py > receiver.log 2>&1 &
+python3 -u recv_udp.py &
 PID_RECV=$!
 sleep 1
 
@@ -61,6 +61,6 @@ echo "Sending packets... check receiver output above!"
 echo "Press Ctrl+C to stop."
 echo "-----------------------------------------------------------"
 
-python3 send_udp.py
+python3 -u send_udp.py
 
 wait
