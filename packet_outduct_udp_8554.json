@@ -1,0 +1,14 @@
+{
+    "outductConfigName": "packet_output",
+    "outductVector": [
+        {
+            "name": "udp_output",
+            "convergenceLayer": "udp",
+            "nextHopNodeId": 0,
+            "remoteHostname": "127.0.0.1",
+            "remotePort": 8554,
+            "maxNumberOfBundlesInPipeline": 10,
+            "maxSumOfBundleBytesInPipeline": 50000000
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "inductConfigName": "packet_input",
+    "inductVector": [
+        {
+            "name": "udp_input",
+            "convergenceLayer": "udp",
+            "boundPort": 6565,
+            "numRxCircularBufferElements": 100,
+            "numRxCircularBufferBytesPerElement": 2000
+        }
+    ]
+}
